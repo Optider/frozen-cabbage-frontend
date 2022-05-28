@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="./style.css">
   <link href='https://fonts.googleapis.com/css?family=Prompt' rel='stylesheet'/>
   <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <script src="script.js"></script>
 
 </head>
 
 <body>
-  <!-- partial:index.partial.html -->
 
   <div class="logo">
     <img src="./img/logo.png" class="img">
@@ -23,14 +23,14 @@
 
       <ul>
         <li>
-          <input type="radio" id="angular" name="selector-fe">
+          <input type="radio" id="angular" name="selector-fe" value="angular">
           <label for="angular">Angular</label>
 
           <div class="check"></div>
         </li>
 
         <li>
-          <input type="radio" id="vue-fe" name="selector-fe">
+          <input type="radio" id="vue-fe" name="selector-fe" value="vue">
           <label for="vue-fe">Vue</label>
 
           <div class="check">
@@ -39,7 +39,7 @@
         </li>
 
         <li>
-          <input type="radio" id="react" name="selector-fe">
+          <input type="radio" id="react" name="selector-fe" value="react">
           <label for="react">React</label>
 
           <div class="check">
@@ -53,14 +53,14 @@
       <h2>Select the BackEnd stack:</h2>
       <ul>
         <li>
-          <input type="radio" id="node" name="selector-be">
+          <input type="radio" id="node" name="selector-be" value="node">
           <label for="node">Node.Js</label>
 
           <div class="check"></div>
         </li>
 
         <li>
-          <input type="radio" id="express" name="selector-be">
+          <input type="radio" id="express" name="selector-be" value="express-js">
           <label for="express">Express</label>
 
           <div class="check">
@@ -69,8 +69,8 @@
         </li>
 
         <li>
-          <input type="radio" id="vue-be" name="selector-be">
-          <label for="vue-be">Vue</label>
+          <input type="radio" id="flask" name="selector-be" value="flask">
+          <label for="flask">Flask</label>
 
           <div class="check">
             <div class="inside"></div>
@@ -79,8 +79,10 @@
       </ul>
     </div>
   </div>
-  <div align="center">
-    <a href="#" class="dnbtn"></a>
+  <div class="container">
+    <div align="center">
+      <a href="#" class="dnbtn" onclick="onDownload()"></a>
+    </div>
   </div>
 
   <!-- partial -->
